@@ -1,0 +1,340 @@
+/* Reset Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+/* Header-Navigation */
+
+.header{
+    background-color: #000;
+    height: 48px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header .nav{
+    float: left;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav > ul > li > a{
+    line-height: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 52px;
+    display: block;
+}
+
+.nav > ul > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav li{
+    position: relative;
+}
+.nav .subnav{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    min-width: 180px;
+}
+.nav li:hover .subnav{
+    display: block;
+}
+.subnav li a{
+    line-height: 44px;
+    display: block;
+    padding-left: 16px;
+}
+
+.subnav li:hover a{
+    font-weight: 600;
+    background-color: #ccc;
+}
+
+/* Search button */
+
+.header .search-btn i{
+    font-size: 24px;
+    color: #fff;
+    line-height: 48px;
+}
+
+.header .search-btn{
+    float: right;
+    padding: 0 18px;
+}
+
+.header .search-btn:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+/* Slider */
+
+.slider{
+    position: relative;
+    padding-top: 48px;
+}
+
+.slider img{
+    width: 100%;
+}
+
+.slider .slider-content{
+    position: absolute;
+    color:#fff;
+    bottom: 48px;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.slider-content h3{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.slider-content p{
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* COntent - The band */
+
+.content .content-header{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+
+.content-header > .title > h2,p{
+    text-align: center;
+}
+.content-header .title h2{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.content-header .title p{
+    margin: 15px 0;
+    font-style: italic;
+    color: #757575;
+}
+
+.band-content .band-desc{
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.band-member{
+    display: flex;
+    padding: 32px 0;
+    text-align: center;
+}
+.band-member .band-content{
+    padding: 0 8px;
+    width: calc(100%/3);
+    
+}
+.band-content img{
+    width: 60%;
+    border-radius: 6px;
+}
+.band-content p{
+    padding: 14px 0;   
+}
+/* Tour */
+
+.tour{
+    background-color: #000;
+}
+.tour .title{
+    color: #fff;
+}
+
+    /* ticket */
+.ticket{
+    background-color: #fff;
+    
+}
+.ticket li{
+    padding: 8px 16px;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+}
+.ticket .sold-out{
+    margin: 0 16px;
+    padding: 4px 8px;
+    color: #fff;
+    background-color: #f44336;
+}
+.ticket .number{
+    float: right;
+    color: #fff;
+    padding: 1px 8px;
+    background-color: #000;
+    border-radius: 50%;
+}
+    /* places */
+.places{
+    display: flex;
+    padding: 32px 8px;
+    margin: 0 -16px;
+}
+.places-list{
+    margin-bottom: 16px;
+}
+.places .places-list{
+    width: calc(100%/3);
+    padding: 0 8px;
+}
+
+.places-list .pl-img{
+    width: 100%;
+    display:block;
+}
+
+.places-list .pl-img:hover{
+    opacity: 0.6;
+}
+
+.places-list .places-content{
+    background-color: #fff;
+    padding: 0 16px;
+}
+
+.places-content h3{
+    padding-top: 15px;
+    color: #000;
+}
+
+.places-content .pl-time{
+    text-align: left;
+    font-style: normal !important;
+}
+
+.places-content .pl-desc{
+    text-align: left;
+    font-style: normal !important;
+    color: #000 !important;
+    padding: 15px 0;
+}
+.places-content .buy-btn{
+    padding-bottom: 32px;
+}
+.places-content .buy-btn a{
+    background-color: #000;
+    color: #fff;
+    padding: 8px 14px;
+}
+
+.places-content .buy-btn a:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+/* Contact */
+
+.contact-body{
+    margin-top: 45px;
+    margin-bottom: 24px;
+}
+.contact-body::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.contact-body i{
+    font-size: 18px;
+    
+}
+.contact-body .info{
+    float: left;
+}
+.contact-body .info p{
+    color: #000;
+    text-align: left;
+    font-style: normal;
+    font-weight: 600;
+}
+.info > p > i{
+    padding-right: 8px;
+}
+.contact-body .contact-form{
+    float: right;
+}
+
+.contact-form input{
+    border: 1px solid #ddd;
+}
+.contact-form .form-line1 .fr-name,.fr-email{
+    padding: 8px 8px;
+}
+.contact-form .form-line1{
+    margin: 15px 0;
+}
+.contact-form .form-line2{
+    margin-top: 8px;
+}
+.contact-form .form-line2 .fr-mess{
+    width: 100%;
+    padding: 8px 8px;
+}
+.btn-form button{
+    float: right;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 8px;
+}
+/* Map */
+.map img{
+    width: 100%;
+}
+.footer{
+    padding: 64px 0;
+}
+.footer .socials{
+    font-size: 24px;
+    opacity: 0.6;
+    text-align: center;
+}
+.footer .socials i:hover{
+    opacity: 0.4;
+}
+
+.footer p{
+    margin: 15px 0;
+    color: #757575;
+}
+.footer p a{
+    color: #757575;
+    text-decoration: underline;
+}
